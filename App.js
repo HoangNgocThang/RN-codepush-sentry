@@ -22,13 +22,14 @@ Sentry.init({
 const App = () => {
 
   React.useEffect(()=> {
-    throw new Error("Thang 111 My first Sentry error!");
+    // open cmt test sentry
+    // throw new Error("Thang 111 My first Sentry error!");
   },[])
 
   return (
     <SafeAreaView>
       <ScrollView>
-        <Text>aa1a</Text>
+        <Text>TEST CODE PUSH</Text>
       </ScrollView>
     </SafeAreaView>
   );
