@@ -9,7 +9,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-
+import codePush from "react-native-code-push";
 
 Sentry.init({
   dsn: "https://0b1bfb681f09438ab2021e3eb26ff6b4@o4504726892969984.ingest.sentry.io/4504726894411776",
@@ -29,7 +29,9 @@ const App = () => {
   return (
     <SafeAreaView>
       <ScrollView>
-        <Text>TEST CODE PUSH</Text>
+        <Text>TEST CODE PUSH2</Text>
+        <Text style={{color:'red'}}>Making my way</Text>
+        <Text>Hello Anh em</Text>
       </ScrollView>
     </SafeAreaView>
   );
@@ -38,4 +40,4 @@ const App = () => {
 const styles = StyleSheet.create({
 });
 
-export default Sentry.wrap(App);
+export default Sentry.wrap(codePush(App));
